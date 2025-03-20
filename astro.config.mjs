@@ -8,9 +8,9 @@ export default defineConfig({
   env: {
     schema: {
       API_URL: envField.string({
-        access: "public",
-        context: "server",
-      }),
+        output: 'server',
+        adapter: vercel(),
+      });
     },
   },
 
